@@ -1,18 +1,18 @@
-	Command being timed: "/home/niema/NiemaGraphGen-Paper/tools/ngg_1.0.0/ngg_barabasi_albert 100000 5"
-	User time (seconds): 0.14
-	System time (seconds): 0.65
-	Percent of CPU this job got: 98%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.80
+	Command being timed: "/home/ubuntu/NiemaGraphGen-Paper/tools/ngg_1.0.0/ngg_barabasi_albert 100000 5"
+	User time (seconds): 0.45
+	System time (seconds): 0.12
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.58
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 17188
+	Maximum resident set size (kbytes): 18704
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 4356
-	Voluntary context switches: 0
-	Involuntary context switches: 0
+	Minor (reclaiming a frame) page faults: 4038
+	Voluntary context switches: 1
+	Involuntary context switches: 7
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
