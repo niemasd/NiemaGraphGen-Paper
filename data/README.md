@@ -17,5 +17,5 @@ for n in 100 1000 10000 100000 1000000 ; do for ed in 10 20 40 ; do for r in $(s
 Expected Degree = *np*
 ```bash
 # NiemaGraphGen
-for n in 100 1000 10000 100000 1000000 ; do for ed in 10 20 40; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed$ed/time.ba.ngg.r$r.txt ~/NiemaGraphGen-Paper/tools/ngg_1.0.0/ngg_erdos_renyi $n $(echo "$ed / $n" | bc -l) > /dev/null ; done ; done ; done
+for n in 100 1000 10000 100000 1000000 ; do for ed in 10 20 40 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed$ed/time.ba.ngg.r$r.txt ~/NiemaGraphGen-Paper/tools/ngg_1.0.0/ngg_erdos_renyi $n $(echo "$ed / $n" | bc -l) > /dev/null ; done ; done ; done
 ```
