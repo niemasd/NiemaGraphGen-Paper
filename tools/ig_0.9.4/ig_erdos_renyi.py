@@ -3,10 +3,10 @@ from igraph import Graph
 from sys import argv, stderr
 try:
     n = int(argv[1])
-    m = int(argv[2])
+    p = float(argv[2])
 except:
-    print("USAGE: %s <num_nodes> <num_edges_from_new>" % argv[0], file=stderr); exit(1)
-g = Graph.Barabasi(n, m, directed=False)
+    print("USAGE: %s <num_nodes> <prob_edge_creation>" % argv[0], file=stderr); exit(1)
+g = Graph.Erdos_Renyi(n, p, directed=False)
 for node in range(g.vcount()):
     print("NODE\t%s\t." % node)
 for edge in g.es:
