@@ -5,6 +5,6 @@
 # NiemaGraphGen
 for n in 100 1000 10000 100000 1000000 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed10/time.ba.ngg.r$r.txt ~/NiemaGraphGen-Paper/tools/ngg_1.0.0/ngg_barabasi_albert $n 5 > /dev/null ; done ; done
 
-# NetworkX
-for n in 100 1000 10000 100000 1000000 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed10/time.ba.nx.r$r.txt ~/NiemaGraphGen-Paper/tools/nx_2.5.1/nx_barabasi_albert.py $n 5 > /dev/null ; done ; done
+# NetworkX (n = 1000000 took more than 2 GB of RAM)
+for n in 100 1000 10000 100000 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed10/time.ba.nx.r$r.txt ~/NiemaGraphGen-Paper/tools/nx_2.5.1/nx_barabasi_albert.py $n 5 > /dev/null ; done ; done
 ```
