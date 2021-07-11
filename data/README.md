@@ -1,4 +1,4 @@
-# Timing Experiments
+# GNU `time` Experiments (runtime + memory)
 ## Barabasi-Albert (BA)
 ### Expected Degree ≈ 10 → *m* = 5
 ```bash
