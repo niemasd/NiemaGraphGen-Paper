@@ -35,3 +35,9 @@ for n in 100 1000 10000 100000 ; do for r in $(seq -w 1 10); do /usr/bin/time -v
 # iGraph
 for n in 100 1000 10000 100000 1000000 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed40/time.ba.ig.r$r.txt ~/NiemaGraphGen-Paper/tools/ig_0.9.4/ig_barabasi_albert.py $n 20 > /dev/null ; done ; done
 ```
+
+## Erdos-Renyi (ER)
+```bash
+# NiemaGraphGen
+for n in 100 1000 10000 100000 1000000 ; do for ed in 10 20 40; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed$ed/time.ba.ngg.r$r.txt ~/NiemaGraphGen-Paper/tools/ngg_1.0.0/ngg_erdos_renyi $n $(echo "$ed / $n" | bc -l) > /dev/null ; done ; done ; done
+```
