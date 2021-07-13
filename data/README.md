@@ -37,3 +37,12 @@ for n in 100 1000 10000 100000 1000000 ; do for ed in 10 ; do for r in $(seq -w 
 # NetworkX
 for n in 100 1000 10000 100000 ; do for ed in 10 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed$ed/time.nws.nx.r$r.txt ~/NiemaGraphGen-Paper/tools/nx_2.5.1/nx_newman_watts_strogatz.py $n $(echo "$ed - 2" | bc -l) 0.25 > /dev/null ; done ; done ; done
 ```
+
+### Expected Degree = 20 → Lattice Degree = 20 - 2 = 18 → *p* = 0.1115
+```bash
+# NiemaGraphGen
+for n in 100 1000 10000 100000 1000000 ; do for ed in 20 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed$ed/time.nws.ngg.r$r.txt ~/NiemaGraphGen-Paper/tools/ngg_1.0.0/ngg_newman_watts_strogatz $n $(echo "$ed - 2" | bc -l) 0.1115 > /dev/null ; done ; done ; done
+
+# NetworkX
+for n in 100 1000 10000 100000 ; do for ed in 20 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed$ed/time.nws.nx.r$r.txt ~/NiemaGraphGen-Paper/tools/nx_2.5.1/nx_newman_watts_strogatz.py $n $(echo "$ed - 2" | bc -l) 0.1115 > /dev/null ; done ; done ; done
+```
