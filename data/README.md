@@ -29,6 +29,6 @@ for n in 100 1000 10000 100000 1000000 ; do for ed in 10 20 40 ; do for r in $(s
 ## Newman-Watts-Strogatz (NWS)
 Expected Degree = (*n*(Lattice Degree)/2 + (*n* choose 2)*p*) / *n*
 
-I set Lattice Degree to be 1 - Expected Degree, and then scale *p* appropriately: *np* = Expected Degree + *p* + 1
+I set Lattice Degree to be Expected Degree - 2, and then scale *p* appropriately: *np* = Expected Degree + *p* + 2
 
 
