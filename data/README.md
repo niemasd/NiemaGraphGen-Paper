@@ -33,8 +33,8 @@ I set Lattice Degree to be Expected Degree - 2, and then scale *p* appropriately
 #### *n* = 100 → *p* = 0.25
 ```bash
 # NiemaGraphGen
-for n in 100 ; do for ed in 10 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed$ed/time.nws.ngg.r$r.txt ~/NiemaGraphGen-Paper/tools/ngg_1.0.0/ngg_newman_watts_strogatz $n 100 8 0.25 > /dev/null ; done ; done ; done
+for n in 100 ; do for ed in 10 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed$ed/time.nws.ngg.r$r.txt ~/NiemaGraphGen-Paper/tools/ngg_1.0.0/ngg_newman_watts_strogatz $n $(echo "$ed - 2" | bc -l) 0.25 > /dev/null ; done ; done ; done
 
 # NetworkX
-for n in 100 ; do for ed in 10 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed$ed/time.nws.nx.r$r.txt ~/NiemaGraphGen-Paper/tools/nx_2.5.1/nx_newman_watts_strogatz.py $n 100 8 0.25 > /dev/null ; done ; done ; done
+for n in 100 ; do for ed in 10 ; do for r in $(seq -w 1 10); do /usr/bin/time -v -o n$n/ed$ed/time.nws.nx.r$r.txt ~/NiemaGraphGen-Paper/tools/nx_2.5.1/nx_newman_watts_strogatz.py $n $(echo "$ed - 2" | bc -l) 0.25 > /dev/null ; done ; done ; done
 ```
