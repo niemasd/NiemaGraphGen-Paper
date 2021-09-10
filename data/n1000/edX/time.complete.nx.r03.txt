@@ -1,18 +1,18 @@
 	Command being timed: "/home/ubuntu/NiemaGraphGen-Paper/tools/nx_2.5.1/nx_complete.py 1000"
-	User time (seconds): 1.28
+	User time (seconds): 0.89
 	System time (seconds): 0.09
-	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.37
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.99
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 177480
+	Maximum resident set size (kbytes): 177912
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 44137
-	Voluntary context switches: 6
-	Involuntary context switches: 69
+	Minor (reclaiming a frame) page faults: 43991
+	Voluntary context switches: 5
+	Involuntary context switches: 5
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
