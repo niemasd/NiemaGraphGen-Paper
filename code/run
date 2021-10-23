@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+ROOTDIR="$(dirname $(dirname $(realpath -s $0)))"
+CODEDIR="$ROOTDIR/code"
+RESULTSDIR="$ROOTDIR/results"
+mkdir -p "$RESULTSDIR"
+jupyter nbconvert --to html --ExecutePreprocessor.allow_errors=True --ExecutePreprocessor.timeout=-1 --execute "$CODEDIR/Figures.ipynb" --output "$RESULTSDIR/Figures.html"
